@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bib: MyString
+  secs: MyString
+  overall: MyString
+  gender: MyString
+  group: MyString
+
+two:
+  bib: MyString
+  secs: MyString
+  overall: MyString
+  gender: MyString
+  group: MyString

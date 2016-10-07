@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  secs: MyString
+  : 1.5
+
+two:
+  secs: MyString
+  : 1.5
