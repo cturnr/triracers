@@ -4,7 +4,7 @@ class LegResult
   field :secs, type: Float
 
 	embedded_in :entrant, class_name: "Entrant"
-  # embeds_one :event, as: parent
+  embeds_one :event, as: parent
 
   validates_presence_of :event
 

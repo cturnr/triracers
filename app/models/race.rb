@@ -6,11 +6,11 @@ class Race
   field :date, type: Date
   field :loc, as: :location, type: Address
 
-  # embeds_many :events, as: :parent, order: [:order.asc]
+  embeds_many :events, as: :parent, order: [:order.asc]
 
   scope :upcoming, -> {where(:date.gte => Date.current)}
   scope :past, -> {where(:date.lt => Date.current)}
 
-  # has_many :entrants, foreign_key: "race._id", dependent: :delete, order: [:secs.asc, :bib.asc]
+  has_many :entrants, foreign_key: "race._id", dependent: :delete, order: [:secs.asc, :bib.asc]
 
 end
